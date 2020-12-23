@@ -36,7 +36,7 @@ jobs:
         run: yarn build
         
       - name: Installing surge
-        run: npm install --g surge
+        run: npm install --global surge
 
     - name: Deploy Covid19 Tracker
-      run: surge ./build myproject002.surge.sh --token ${{ secrets.MYPROJECT002 }}
+      run: surge ./build myveryproject002.surge.sh --token ${{ secrets.MYPROJECT002 }}
